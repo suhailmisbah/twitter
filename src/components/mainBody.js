@@ -2,6 +2,8 @@ import React, {useState, useEffect} from 'react'
 
 import './assets/mainBody.css'
 
+import { useDispatch } from 'react-redux';
+import {insert} from './actions'
 
 import Avatar from '@material-ui/core/Avatar';
 import Button from '@material-ui/core/Button';
@@ -13,7 +15,8 @@ function MainBody() {
     const [caption, setcaption] = useState(''); //caption
     const [imgUrl, setimgUrl] = useState(''); //image
     let [data, newposts] = useState([]); 
-       
+    const dispatch = useDispatch()  
+
     //getting database values
      useEffect(()=> {
 
@@ -21,19 +24,16 @@ function MainBody() {
         if (localdata) {
         newposts(JSON.parse(localdata));
         }
-
-       
         
      }, [caption])
 
      //console.log(data.caption)
 
      //inserting into database
+
     const setData = () => {
     
-        let obj = {caption: caption, url: imgUrl}
-        localStorage.setItem('myData', JSON.stringify(obj));
-
+        dispatch(insert(caption, imgUrl))  //inserting to local storage
         
         setcaption("");
         setimgUrl("");
