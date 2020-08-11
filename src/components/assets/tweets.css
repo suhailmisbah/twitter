@@ -1,0 +1,52 @@
+.tweets__Style {
+    background-color: white;
+    margin-top: 1%;
+    padding: 10px;
+    border: 1px solid rgb(211, 241, 255);
+}
+
+.tweets__Style:hover {
+    background-color:  rgb(228, 244, 253);
+    cursor: pointer;
+}
+
+.tweetTop__style {
+    display: flex;
+    margin-bottom: -5%;
+}
+
+.tweet__Avatar {
+    margin-right: 10px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.tweets__Time{
+    font-weight: lighter;
+    color: rgb(128, 128, 128);
+}
+
+.post__Caption {
+    padding: 10px;
+    margin-left: 9%;
+    margin-bottom: -1%;
+    
+}
+
+.post__image {
+    width: 90%;
+    margin-left: 9%;
+    object-fit: contain;
+    border: 2px solid lightgray;
+    border-radius: 30px;
+}
+
+.tweet__Action {
+    display: flex;
+    padding-top: 10px;
+    margin-left: 10%;
+    justify-content: space-around;
+
+    color: rgb(128, 128, 128);
+}
+

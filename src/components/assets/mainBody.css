@@ -1,0 +1,54 @@
+.mainBody__style {
+    background-color: white;
+    padding-top: 5px;
+    border: 1px solid rgb(211, 241, 255);
+}
+
+.topNav__style {
+    background-color: white;
+    color: black;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    /* width: 100%; */
+    padding: 10px;
+    border-bottom: 1px solid rgb(211, 241, 255);
+    
+}
+
+.post__style {
+    padding: 10px;
+    display: flex;
+}
+
+.post__Avatar {
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.post__textField {
+    width: 100%;
+    border-bottom: 0 solid;
+}
+
+.postButton__style {
+    margin-left: 80%;
+    margin-bottom: 1%;
+}
+
+.tweet__buttonMain {
+    background-color: rgb(29, 161, 242) !important;
+    border: none !important;
+    color: white !important;
+    font-weight: 900 !important;
+    text-transform: inherit !important;
+    border-radius: 30px !important;
+    height: 40px !important;
+    width: 100px !important;
+    margin-top: 20px !important;
+
+}
+
+.postImage__style {
+    padding: 10px;
+    padding-left: 60px;
+}

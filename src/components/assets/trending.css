@@ -1,0 +1,16 @@
+.trending__Style {
+    background-color: rgb(242, 247, 250);
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.trending__Style h3 {
+    border-bottom: 2px solid lightgray;
+}
+.trending__Body {
+    border-bottom: 2px solid lightgray;
+}
+
+.trending__counter {
+    color: lightgray;
+}
